@@ -9,6 +9,7 @@ import { type AnimeCardProps } from "~/types";
 
 import Vote from "./vote";
 import { MotionDiv } from "./motion-div";
+import { Star } from "lucide-react";
 
 function AnimeCard({ anime, index, session }: AnimeCardProps) {
   const stagger = 0.25;
@@ -64,25 +65,7 @@ function AnimeCard({ anime, index, session }: AnimeCardProps) {
           <div className="flex items-center justify-between gap-4">
             <div className="flex flex-row gap-2">
               <div className="flex flex-row items-center gap-2">
-                <Image
-                  src="/episodes.svg"
-                  alt="episodes"
-                  width={20}
-                  height={20}
-                  className="object-contain"
-                />
-                <p className="text-base font-bold text-white">
-                  {anime.episodes || anime.episodes_aired}
-                </p>
-              </div>
-              <div className="flex flex-row items-center gap-2">
-                <Image
-                  src="/star.svg"
-                  alt="star"
-                  width={18}
-                  height={18}
-                  className="object-contain"
-                />
+                <Star className="h-4 w-4 object-contain" />
                 <p className="text-base font-bold text-[#FFAD49]">
                   {anime.score}
                 </p>

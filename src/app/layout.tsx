@@ -1,6 +1,5 @@
 import "~/styles/globals.css";
 
-import { Inter } from "next/font/google";
 import { Inter as FontSans } from "next/font/google";
 import { TRPCReactProvider } from "~/trpc/react";
 import Navbar from "~/components/layout/navbar";
@@ -18,7 +17,7 @@ const fontSans = FontSans({
 });
 
 export const metadata = {
-  title: "SoraAnime",
+  title: "AnimeResurrect",
   description: "The place that would bring back your favourite anime",
   icons: [{ rel: "icon", url: "/lufy.webp" }],
 };
