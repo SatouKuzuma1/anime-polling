@@ -1,9 +1,6 @@
 "use client";
 
-import { cn } from "~/lib/utils";
-
 import Image from "next/image";
-import { Card } from "~/components/ui/card";
 
 import { type AnimeCardProps } from "~/types";
 
@@ -15,16 +12,6 @@ function AnimeCard({ anime, index, session }: AnimeCardProps) {
   const stagger = 0.25;
 
   const variants = { hidden: { opacity: 0 }, visible: { opacity: 1 } };
-  const animeData = {
-    id: anime.id,
-    name: anime.name,
-    image: anime.image,
-    episodes: anime.episodes,
-    episodes_aired: anime.episodes_aired,
-    score: anime.score,
-    kind: anime.kind,
-    isFavorite: true,
-  };
 
   const imageSrc = anime.image?.original
     ? `https://shikimori.one${anime.image.original}`

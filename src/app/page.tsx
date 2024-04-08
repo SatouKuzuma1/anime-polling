@@ -1,5 +1,3 @@
-import Link from "next/link";
-import AnimeCard from "~/components/anime/anime-card";
 import RankingCard from "~/components/anime/rankind-card";
 import Hero from "~/components/layout/hero";
 import { PaginationMain } from "~/components/pagination/pagination";
@@ -16,7 +14,6 @@ export default async function Home() {
   const data = await api.anime.getAllAnime({ take, skip });
   const animes = data?.animes;
   const metadata = data?.metadata;
-  console.log("metadata", metadata);
 
   return (
     <main className="flex flex-col items-center justify-center gap-10 px-8 py-16 sm:p-16">
