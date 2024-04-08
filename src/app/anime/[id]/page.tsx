@@ -21,7 +21,7 @@ const AnimeId = async ({ params }: { params: Params }) => {
   const addAnimeToDatabase = await api.anime.add({
     id: anime.id,
     name: anime.name,
-    image: imageSrc,
+    image: imageSrc!,
     score: anime.score,
     episodes: anime.episodes,
   });

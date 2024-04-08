@@ -209,19 +209,6 @@ const Vote = ({ animeId, isFlexRow, session }: VoteProps) => {
         voteType: voteType,
         id: animeId,
       });
-
-      // if (
-      //   post &&
-      //   post.post !== null &&
-      //   voteType === "UPVOTE" &&
-      //   post.post.userId != userId
-      // ) {
-      //   createNotification.mutate({
-      //     id:=== "post" ? animeId : commentanimeId ?? "",
-      //     commentId:=== "comment" ? animeId : null,
-      //     notificationTypeId:=== "post" ? 1 : 3,
-      //   });
-      // }
     }
   };
 
