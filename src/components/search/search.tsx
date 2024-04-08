@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
+/* eslint-disable @typescript-eslint/no-unsafe-call */
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
@@ -64,6 +67,7 @@ export const SearchBar = () => {
       if (item.name) {
         return searchParam.some((newItem) => {
           return (
+            // eslint-disable-next-line @typescript-eslint/no-unsafe-call
             item[newItem]
               .toString()
               .toLowerCase()
